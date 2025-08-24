@@ -14,7 +14,7 @@
 .fixed_title {
   position: fixed;
   font-weight: bold; 
-  font-size: larger; 
+  font-size: 2.0rem; /* Tăng kích thước chữ */
   color:rgb(116, 143, 17);
   top: 70px; 
   left: 50%;
@@ -24,9 +24,9 @@
 .student_no{
   position: fixed;
   font-weight: 600;
-  font-size: medium;
+  font-size: 22px;
   color: rgb(116, 143, 17);
-  top: 20px;
+  top: 22px;
   right: 20px;
   transform: translate(-20%);
 }

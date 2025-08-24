@@ -1,5 +1,7 @@
 import React from "react";
-import "./globals.css";
+import "./homepage.css";
+import Navbar from "./Components/Navbar";
+
 
 const Title_of_Page = () => {
   return(
@@ -18,6 +20,7 @@ const Main_Page = () => {
     <main className="main_page">
       <Title_of_Page/>
       <Student_No/>
+      <Navbar/>
     </main>
   );
 } 

@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 170px;
+    width: 100%;
+    height: 50px;
+    background: #5fd10d;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    
+}
+
+.nav_item {
+    margin: 0 15px;
+    font-size: 20px;
+    border-right: grey 4px solid;
+    border-left: grey 4px solid ;
+    padding-left: 8px;  
+    padding-right: 8px;  
+    transition: transform 0.2s ease;
+}
+
+.nav_item:hover {
+    transform: translateY(-4px); 
+    background-color: rgba(255,255,255,0.2); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.nav_item a {
+    color: rgb(53, 13, 13); 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about{
+    font-size: 20px;
+    color: rgb(53, 13, 13);
+    border-right: grey 4px solid;
+    border-left: grey 4px solid ;
+    padding-left: 8px;  
+    padding-right: 8px;
+    transition: transform 0.2s ease; 
+}
+
+.about:hover {
+    transform: translateY(-4px); /* Nhấc nhẹ khi hover */
+    background-color: rgba(255,255,255,0.2); /* Hiệu ứng hover nhẹ */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+.about_n_hamburger{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.hamburger_menu {
+    margin-top: -6px;
+}
+
+/* hamgurger menu setting*/
+.hamburger_dropdown {
+  position: absolute;
+  top: 60px; 
+  right: 30px;
+  background: #fff;
+  border: 1px solid #e5cfcf;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.hamburger_dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.hamburger_dropdown li {
+  padding: 10px 30px;
+}
+
+.hamburger_dropdown a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hamburger_dropdown a:hover {
+  color: #5fd10d;
+}
