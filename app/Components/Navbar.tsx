@@ -14,9 +14,9 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="nav_list">
         <li className="nav_item"><a href="#home">Home</a></li>
-        <li className="nav_item"><a href="#about">About</a></li>
-        <li className="nav_item"><a href="#services">Services</a></li>
-        <li className="nav_item"><a href="#contact">Contact</a></li>
+        <li className="nav_item"><a href="#about">Pre-lab Question</a></li>
+        <li className="nav_item"><a href="#services">Escape room</a></li>
+        <li className="nav_item"><a href="#contact">Coding races</a></li>
       </ul>
       <ul className="about_n_hamburger">
         <li className="about"><a href="#contact">about</a></li>

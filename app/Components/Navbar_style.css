@@ -31,6 +31,7 @@
     padding-left: 8px;  
     padding-right: 8px;  
     transition: transform 0.2s ease;
+    white-space: nowrap;
 }
 
 .nav_item:hover {
@@ -96,7 +97,7 @@
   transform: translateY(-2px);
 }
 
-/* Click animation - khi menu hiện */
+
 .hamburger_icon.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }

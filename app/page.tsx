@@ -15,12 +15,28 @@ const Student_No = () => {
   );
 }
 
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <footer className="footer">
+      <div className="footer_content">
+        <p>&copy; {currentYear} All rights reserved</p>
+        <p>Student Name: Le Ngoc Minh Chau</p>
+        <p>Student Number: 21654237</p>
+        <p>Date: {new Date().toLocaleDateString()}</p>
+      </div>
+    </footer>
+  );
+}
+
 const Main_Page = () => {
   return(
     <main className="main_page">
       <Title_of_Page/>
       <Student_No/>
       <Navbar/>
+      <Footer/>
     </main>
   );
 } 
