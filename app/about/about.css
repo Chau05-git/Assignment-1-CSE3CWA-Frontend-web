@@ -1,0 +1,77 @@
+/* Page matches home color scheme */
+.about_page {
+  background: #ffe4c4; /* same as home */
+  min-height: 100vh;
+  margin: 0;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+/* keep content below fixed header/navbar */
+.about_main {
+  padding-top: 300px; /* adjust if your header/navbar height differs */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* page title */
+.about_title {
+  margin: 0;
+  font-size: 2rem;
+  color: rgb(53,13,13);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* two info boxes side by side, responsive */
+.info_container {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* box style - same tone as header */
+.student_info_box {
+  background: rgb(152, 192, 53);
+  color: #222;
+  padding: 22px 32px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  min-width: 260px;
+  text-align: center;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+/* hover effect */
+.student_info_box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.16);
+}
+
+/* headings and text */
+.student_info_box h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.student_info_box p {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* small screens */
+@media (max-width: 600px) {
+  .about_main { padding-top: 220px; }
+  .student_info_box { min-width: 100%; }
+  .info_container { gap: 16px; padding: 0 12px; }
+}
