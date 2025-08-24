@@ -1,19 +1,23 @@
-import React from "react";
+"use client";
+import React from 'react';
+import './CodeDisplay_style.css';
+
+const CodeDisplay = () => {
+  const sourceCode = `import React from "react";
 import "./homepage.css";
 import Navbar from "./Components/Navbar";
 import Header from './Components/Headers';
 import CodeDisplay from "./Components/CodeDisplay";
 
-
 const Title_of_Page = () => {
   return(
-  <h1 className="fixed_title">Welcome to my website</h1>
+    <h1 className="fixed_title">Welcome to my website</h1>
   );
 }
 
 const Student_No = () => {
   return(
-  <h2 className="student_no">Student No: 21654237</h2>
+    <h2 className="student_no">Student No: 21654237</h2>
   );
 }
 
@@ -44,4 +48,27 @@ const Main_Page = () => {
     </main>
   );
 } 
-export default Main_Page
+export default Main_Page`;
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(sourceCode);
+  };
+
+  return (
+    <div className="code-container">
+      <div className="code-header">
+        <h3>Source Code Output</h3>
+        <button className="copy-button" onClick={handleCopy}>
+          Copy Code
+        </button>
+      </div>
+      <div className="code-content">
+        <pre>
+          <code>{sourceCode}</code>
+        </pre>
+      </div>
+    </div>
+  );
+};
+
+export default CodeDisplay;

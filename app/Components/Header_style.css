@@ -39,11 +39,11 @@
 
 .add-tab {
   padding: 8px 16px;
-  border: 2px dashed #5fd10d;
+  border: 2px dashed #e0e716;
   background: transparent;
   border-radius: 4px;
   cursor: pointer;
-  color: #5fd10d;
+  color: #d8e615;
   transition: all 0.3s ease;
 }
 
