@@ -56,8 +56,8 @@
 }
 
 .about:hover {
-    transform: translateY(-4px); /* Nhấc nhẹ khi hover */
-    background-color: rgba(255,255,255,0.2); /* Hiệu ứng hover nhẹ */
+    transform: translateY(-4px); 
+    background-color: rgba(255,255,255,0.2); 
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
 }
@@ -73,7 +73,43 @@
     margin-top: -6px;
 }
 
-/* hamgurger menu setting*/
+.hamburger_icon {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #3d0c0c;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover animation */
+.hamburger_icon:hover .bar:nth-child(1) {
+  transform: translateY(2px);
+}
+
+.hamburger_icon:hover .bar:nth-child(3) {
+  transform: translateY(-2px);
+}
+
+/* Click animation - khi menu hiện */
+.hamburger_icon.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger_icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger_icon.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* hamgurger drop down menu setting*/
 .hamburger_dropdown {
   position: absolute;
   top: 60px; 

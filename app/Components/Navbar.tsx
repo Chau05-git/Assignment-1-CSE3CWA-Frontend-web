@@ -21,9 +21,11 @@ const Navbar = () => {
       <ul className="about_n_hamburger">
         <li className="about"><a href="#contact">about</a></li>
         <li className="hamburger_menu">
-          <button onClick={handleHamburgerClick} style={{ background: "none", border: "none", fontSize: "1.5rem", cursor: "pointer" }}>
-            &#9776;
-          </button>
+          <div className="hamburger_icon" onClick={handleHamburgerClick}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
         </li>
       </ul>
       {showMenu && (
