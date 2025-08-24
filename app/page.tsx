@@ -1,6 +1,7 @@
 import React from "react";
 import "./homepage.css";
 import Navbar from "./Components/Navbar";
+import Header from './Components/Headers';
 
 
 const Title_of_Page = () => {
@@ -36,6 +37,7 @@ const Main_Page = () => {
       <Title_of_Page/>
       <Student_No/>
       <Navbar/>
+      <Header/>
       <Footer/>
     </main>
   );
