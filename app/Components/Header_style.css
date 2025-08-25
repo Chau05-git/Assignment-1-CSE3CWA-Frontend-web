@@ -6,6 +6,9 @@
   background: rgb(152, 192, 53);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-sizing: border-box;   
+  padding: 12px; 
+  transition: height 0.18s ease;
 }
 
 .header-title {
@@ -18,9 +21,13 @@
 
 .tabs-header {
   display: flex;
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-  gap: 10px;
+  flex-wrap: wrap;        
+  gap: 10px;              
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;      
 }
 
 .tab {
@@ -30,6 +37,9 @@
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;    
+  flex-shrink: 0;         
+  margin: 0;
 }
 
 .tab.active {
@@ -45,6 +55,7 @@
   cursor: pointer;
   color: #d8e615;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .add-tab:hover {
