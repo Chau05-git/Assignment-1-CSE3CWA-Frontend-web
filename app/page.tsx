@@ -4,13 +4,13 @@ import Navbar from "./Components/Navbar";
 import Header from './Components/Headers';
 import CodeDisplay from "./Components/CodeDisplay";
 
-// PHẦN MỚI: đọc filesystem ở server (không dùng API)
+
 import path from 'node:path';
 import fs from 'node:fs/promises';
 
-export const runtime = 'nodejs'; // cần Node runtime để đọc filesystem
+export const runtime = 'nodejs'; 
 
-// Bỏ qua các thư mục build/cache
+
 const EXCLUDED_DIRS = new Set([
   'node_modules',
   '.next',
@@ -29,7 +29,7 @@ async function collectTsxFiles(dir: string, root: string, acc: string[]) {
   try {
     entries = await fs.readdir(dir, { withFileTypes: true });
   } catch {
-    return; // không đọc được thì bỏ qua
+    return; 
   }
 
   for (const entry of entries) {
@@ -64,14 +64,14 @@ async function buildOutput(): Promise<string> {
         `// ===========================\n// File: ${rel}\n// ===========================\n\n${content}\n`
       );
     } catch {
-      // đọc lỗi thì bỏ qua file này
+      
     }
   }
 
   return parts.join('\n');
 }
 
-// GIỮ NGUYÊN PHẦN CŨ
+
 const Title_of_Page = () => {
   return(
   <h1 className="fixed_title">Welcome to my website</h1>
@@ -99,7 +99,7 @@ const Footer = () => {
   );
 }
 
-// PHẦN MỚI: nhận searchParams để kích hoạt Generate qua ?gen=1
+
 export default async function Main_Page({
   searchParams,
 }: {
@@ -114,7 +114,7 @@ export default async function Main_Page({
       <Student_No/>
       <Navbar/>
       <Header/>
-      {/* Truyền code xuống CodeDisplay để hiển thị trong khung, giữ nguyên layout cũ */}
+      {/* <CodeDisplay code={code}/> */}
       <CodeDisplay code={code}/>
       <Footer/>
     </main>
