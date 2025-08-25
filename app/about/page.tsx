@@ -23,17 +23,16 @@ const AboutPage = () => {
         <section className="video_section">
           <h2 className="video_title">Project Video</h2>
 
-          {/* Option A: HTML5 video. Put your file at /public/video.mp4 or change src */}
           <div className="video_wrapper">
             <video
               className="about_video"
               controls
               preload="metadata"
-              poster="/video-poster.jpg" /* optional poster image in public/ */
+              poster="/video-poster.jpg"
             >
-              <source src="/Introduction-about-website" type="video/mp4" />
+              <source src="/introduction-about-website.mp4" type="video/mp4" />
               Your browser does not support HTML5 video. You can download the file
-              <a href="/Introduction-about-website" download> here</a>.
+              <a href="/introduction-about-website.mp4" download> here</a>.
             </video>
           </div>
         </section>

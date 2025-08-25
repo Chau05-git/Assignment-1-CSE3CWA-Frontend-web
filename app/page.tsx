@@ -104,10 +104,12 @@ const Footer = () => {
 export default async function Main_Page({
   searchParams,
 }: {
-  searchParams?: { [key: string]: string | string[] | undefined }
+  searchParams?: { [key: string]: string | string[] | undefined };
 }) {
-  const shouldGenerate = typeof searchParams?.gen !== 'undefined' && searchParams?.gen !== '0';
-  const code = shouldGenerate ? await buildOutput() : '';
+  
+  const params = await searchParams;
+  const shouldGenerate = typeof params?.gen !== "undefined" && params?.gen !== "0";
+  const code = shouldGenerate ? await buildOutput() : "";
 
   return(
     <main className="main_page">
