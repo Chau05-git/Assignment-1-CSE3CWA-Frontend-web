@@ -10,7 +10,8 @@ import fs from 'node:fs/promises';
 
 export const runtime = 'nodejs'; 
 
-
+/* AI help me build code generate feature
+ Basically it collect all code from only tsx file and present it in code display box */
 const EXCLUDED_DIRS = new Set([
   'node_modules',
   '.next',

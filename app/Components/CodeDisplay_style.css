@@ -89,3 +89,29 @@
 .copy-button:hover::after {
     width: 100%;
 }
+
+.code-container {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.code-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.copy-button {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--border);
+}
+
+.code-content {
+  background: var(--bg);
+  color: var(--text);
+  border-top: 1px solid var(--border);
+}
+
+.code-content pre, .code-content code {
+  color: var(--text);
+}

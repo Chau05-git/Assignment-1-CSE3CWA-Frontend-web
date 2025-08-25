@@ -20,7 +20,7 @@
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-/* tabs container: wrap when too many tabs */
+
 .tabs-header {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +33,7 @@
   padding: 8px 0;
 }
 
-/* each tab button */
+
 .tab {
   display: inline-flex;
   align-items: center;
@@ -66,7 +66,7 @@
   font-weight: 600;
 }
 
-/* close button inside tab */
+
 .tab-close {
   background: transparent;
   border: none;
@@ -84,7 +84,7 @@
   background: rgba(0,0,0,0.18);
 }
 
-/* add button */
+
 .add-tab {
   padding: 6px 12px;
   border: 2px dashed rgba(255,255,255,0.6);
@@ -101,7 +101,7 @@
   transform: translateY(-3px);
 }
 
-/* content area */
+
 .tab-content {
   padding: 14px;
   min-height: 120px;
