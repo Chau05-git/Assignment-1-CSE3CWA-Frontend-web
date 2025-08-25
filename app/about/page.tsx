@@ -31,17 +31,11 @@ const AboutPage = () => {
               preload="metadata"
               poster="/video-poster.jpg" /* optional poster image in public/ */
             >
-              <source src="/video.mp4" type="video/mp4" />
+              <source src="/Introduction-about-website" type="video/mp4" />
               Your browser does not support HTML5 video. You can download the file
-              <a href="/video.mp4" download> here</a>.
+              <a href="/Introduction-about-website" download> here</a>.
             </video>
           </div>
-
-          {/* Option B (alternative): You can replace the above <video> with an iframe to embed YouTube:
-              <div className="video_wrapper">
-                <iframe className="about_video" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" frameBorder="0" allowFullScreen />
-              </div>
-          */}
         </section>
       </main>
     </div>

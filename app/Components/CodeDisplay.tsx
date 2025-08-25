@@ -20,7 +20,7 @@ const CodeDisplay: React.FC<Props> = ({ code = '' }) => {
             className="copy-button"
             href="?gen=1"
             style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}
-            title="Generate toàn bộ .tsx và hiển thị trong khung này"
+            title="Generate all code in .tsx file and display in this frame"
           >
             Generate
           </a>
